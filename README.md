@@ -1,4 +1,4 @@
-An example of Oracle OCI functions usage.
+An example of Oracle OCI functions usage..
 
 This function calls out to a website, scrap some data out of a webpage (sidenote: I am scraping an html bin collection dates table if you ever wonder), and send it to OCI Hub Connector which in turns sends it to OCI Nofication for delivery via SMS.
 You may send out your scraping data directly to OCI Notifications but this method would only be able to send emails out, and not SMS. Hence the usage of OCI Hub Connector instead. Regardless you have both methods in the func.py file..
@@ -12,3 +12,4 @@ Couple of tips:
 * Policies can be challenging to figure out, give broad permissions to your policy statements e.g. to manage all-resources in tenancy and work your way up towards least privilege
 * Just read the OCI SDK Python documentation on the classes, methods you are going to use, it will save you time :>
 * There is a need to execute fn invoke to build your application, it is not ideal and it takes time to go through the process everytime. I am pretty sure there is a way to speed up the process, if you know let me know.
+* You can pass ENV variables to your functions if you use allKeyValuesString, you can pass them from the "manage configuration" tab in your function on the OCI console, I have not found much documentation about it and only one blog on the net mentionning it. You will see in my code the keyword in question.
