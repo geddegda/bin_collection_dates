@@ -6,7 +6,7 @@ You may send direct to OCI Notifications but in this can only email as a channel
 Couple of tips:
 * There is a pip command to extract the requirements.txt from your python code.
 * The OCI Function (Fn project based) needs a handler(ctx, data: io.BytesIO = None) as header 
-* The OCI Function (Fn project based) needs a return
+* The OCI Function (Fn project based) needs a return response.Response(ctx,...)
 * You use the instance principal logging method for your function to obtain its "signer" value (make sure your function falls into a dyn group and has correct policies)
 * return response.Response(ctx, response_data=..., headers={"Content-Type": "application/json"})
 * Activate Monitoring from the OCI Application to get the logs (function invocation logs) out of the function execution
