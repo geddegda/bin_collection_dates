@@ -1,6 +1,6 @@
 An example of Oracle OCI functions usage.
 
-This function calls out to a website, scrap some data out of a webpage, and send it to OCI Hub Connector which in turns sends it to OCI Nofication for delivery via SMS.
+This function calls out to a website, scrap some data out of a webpage (sidenote: I am scraping an html bin collection dates table if you ever wonder), and send it to OCI Hub Connector which in turns sends it to OCI Nofication for delivery via SMS.
 You may send direct to OCI Notifications but in this can only email as a channel works, not SMS, hence the usage of OCI Hub Connector.
 
 Couple of tips:
