@@ -8,7 +8,6 @@ Couple of tips:
 * The OCI Function (Fn project based) needs a handler(ctx, data: io.BytesIO = None) as header 
 * The OCI Function (Fn project based) needs a return response.Response(ctx,...)
 * You use the instance principal logging method for your function to obtain its "signer" value (make sure your function falls into a dyn group and has correct policies)
-* return response.Response(ctx, response_data=..., headers={"Content-Type": "application/json"})
 * Activate Monitoring from the OCI Application to get the logs (function invocation logs) out of the function execution
 * Policies can be challenging to figure out, give broad permissions to your policy statements e.g. to manage all-resources in tenancy and work your way up towards least privilege
 * Just read the OCI SDK Python documentation on the classes, methods you are going to use, it will save you time :>
