@@ -1,7 +1,7 @@
 An example of Oracle OCI functions usage.
 
 This function calls out to a website, scrap some data out of a webpage (sidenote: I am scraping an html bin collection dates table if you ever wonder), and send it to OCI Hub Connector which in turns sends it to OCI Nofication for delivery via SMS.
-You may send direct to OCI Notifications but in this can only email as a channel works, not SMS, hence the usage of OCI Hub Connector.
+You may send out your scraping data directly to OCI Notifications but this method would only be able to send emails out, and not SMS. Hence the usage of OCI Hub Connector instead. Regardless you have both methods in the func.py file..
 
 Couple of tips:
 * There is a pip command to extract the requirements.txt from your python code.
